@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/authentication-form.css" />
-    <title>Login and Signup</title>
-  </head>
-  <body class="bg-white">
-    <header class="exercise-header">
-      <nav class="top-nav">
-        <h1>Authentication page</h1>
-        <ul>
-          <li class="back-button">
-            <a href="/">Back to main page</a>
-          </li>
-          <li>
-            <a href="./ecommerce-page.html">E-commerce page</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/authentication-form.css" />
+  <title>Login and Signup</title>
+</head>
+
+<body class="bg-white">
+  <header class="exercise-header">
+    <nav class="top-nav">
+      <h1>Authentication page</h1>
+      <ul>
+        <li class="back-button">
+          <a href="/">Back to main page</a>
+        </li>
+        <li>
+          <a href="./ecommerce-page.html">E-commerce page</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
     <div class="content">
       <div id="sign-in">
         <div class="form-header">
@@ -31,22 +34,11 @@
         <form id="sign-in-form">
           <div class="form-input-control">
             <label for="login-field">Login</label>
-            <input
-              type="email"
-              id="login-field"
-              placeholder="use your email as login"
-              required
-            />
+            <input type="email" id="login-field" placeholder="use your email as login" required />
           </div>
           <div class="form-input-control">
             <label for="password-field">Password</label>
-            <input
-              type="password"
-              id="password-field"
-              placeholder="passwords must match"
-              minlength="8"
-              required
-            />
+            <input type="password" id="password-field" placeholder="passwords must match" minlength="8" required />
           </div>
           <div class="form-checkbox-control">
             <input type="checkbox" id="stay-signed-in" />
@@ -60,6 +52,8 @@
         </form>
         <!-- Sign IN form ends here -->
       </div>
+    </div>
+    <div class="container">
       <div id="sign-up">
         <div class="form-header">
           <h2>Sign up</h2>
@@ -69,54 +63,25 @@
         <form id="sign-up-form">
           <div class="form-input-control">
             <label for="name-field">Your name</label>
-            <input
-              type="text"
-              id="name-field"
-              minlength="5"
-              placeholder="ex.: John Doe"
-              required
-            />
+            <input type="text" id="name-field" minlength="5" placeholder="ex.: John Doe" required />
           </div>
           <div class="form-input-control">
             <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="name@domain.zone"
-              required
-            />
+            <input type="email" id="email" placeholder="name@domain.zone" required />
           </div>
           <div class="form-input-control">
             <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="8 characters minimum"
-              minlength="8"
-              maxlength="20"
-              required
-            />
+            <input type="password" id="password" placeholder="8 characters minimum" minlength="8" maxlength="20"
+              required />
           </div>
           <div class="form-input-control">
             <label for="confirm-password">Confirm Password</label>
-            <input
-              type="password"
-              id="confirm-password"
-              placeholder="passwords must match"
-              minlength="8"
-              maxlength="20"
-              required
-            />
+            <input type="password" id="confirm-password" placeholder="passwords must match" minlength="8" maxlength="20"
+              required />
           </div>
           <div class="form-input-control">
             <label for="phone">Phone number</label>
-            <input
-              type="tel"
-              id="phone"
-              minlength="12"
-              maxlength="12"
-              placeholder="ex.: +12336456355"
-            />
+            <input type="tel" id="phone" minlength="12" maxlength="12" placeholder="ex.: +12336456355" />
           </div>
           <div class="form-input-control">
             <label for="avatar">Avatar</label>
@@ -154,13 +119,7 @@
                 <label for="female">Female</label>
               </div>
               <div class="form-radio-control">
-                <input
-                  type="radio"
-                  id="other"
-                  name="gender"
-                  value="other"
-                  checked
-                />
+                <input type="radio" id="other" name="gender" value="other" checked />
                 <label for="other">Other</label>
               </div>
             </div>
@@ -170,8 +129,10 @@
             <input type="submit" value="Sign up" />
           </div>
         </form>
-        <!-- Sign UP form ends here -->
       </div>
+      <!-- Sign UP form ends here -->
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
