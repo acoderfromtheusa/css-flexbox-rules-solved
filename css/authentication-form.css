@@ -12,6 +12,7 @@ body {
 
 .content {
   padding: 30px;
+  width: 100%;
 }
 
 h2 {
@@ -36,7 +37,14 @@ form {
 
 #sign-in,
 #sign-up {
-  width: 50%;
+  width: 100%;
+}
+
+#sign-in-form,
+#sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 a {
@@ -87,6 +95,8 @@ input[type="submit"]:hover {
 
 .container {
   margin-bottom: 30px;
+  display: flex;
+  width: 100%;
 }
 
 .form-row input {
@@ -102,4 +112,11 @@ input[type="search"],
 input[type="number"] {
   height: 30px;
   box-sizing: border-box;
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
